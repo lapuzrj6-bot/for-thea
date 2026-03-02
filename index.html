@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For Thea 🌷</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<div class="login-box">
+<h2 class="fade">Welcome Be 🌷</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login 💗</button>
+
+<p id="error"></p>
+</div>
+
+<script>
+function login(){
+var u=document.getElementById("username").value;
+var p=document.getElementById("password").value;
+
+if(u==="thea" && p==="anggandamo"){
+window.location.href="letter.html";
+}else{
+document.getElementById("error").innerText="Wrong password Be 💔";
+}
+}
+
+// floating hearts
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="💗";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+setInterval(createHeart,300);
+</script>
+
+</body>
+</html>

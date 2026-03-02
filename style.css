@@ -1,0 +1,89 @@
+body{
+margin:0;
+padding:0;
+font-family:Arial;
+background-image:url("https://images.unsplash.com/photo-1525310072745-f49212b5ac6d");
+background-size:cover;
+background-position:center;
+overflow:hidden;
+}
+
+/* floating hearts */
+.heart{
+position:fixed;
+bottom:-10px;
+font-size:24px;
+animation:floatUp linear forwards;
+}
+
+@keyframes floatUp{
+to{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+/* fade animation */
+.fade{
+animation:fadeIn 2s;
+}
+
+@keyframes fadeIn{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* login */
+.login-box{
+background:rgba(255,192,203,0.9);
+padding:25px;
+width:300px;
+margin:150px auto;
+text-align:center;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,105,180,0.6);
+}
+
+.login-box input{
+width:90%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:10px;
+}
+
+.login-box button{
+padding:12px;
+width:100%;
+background:#ff69b4;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* letter */
+.letter-box{
+background:rgba(255,192,203,0.9);
+padding:30px;
+width:350px;
+margin:100px auto;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,105,180,0.6);
+text-align:center;
+}
+
+/* surprise button */
+.surprise-btn{
+background:#ff1493;
+color:white;
+border:none;
+padding:12px;
+margin-top:15px;
+border-radius:10px;
+cursor:pointer;
+}
+
+.surprise-btn:hover{
+background:#ff69b4;
+}
